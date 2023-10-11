@@ -15,6 +15,6 @@ const BlogCommentSchema = new Schema({
 }, { timestamps: true });
 
 const blogcomments = mongoose.model('blogcomments', BlogCommentSchema);
-blogcomments.createIndexes({ "closeOfferAt": 1 }, { expireAfterSeconds: 0 });
+blogcomments.createIndexes();
 
 module.exports = blogcomments;
